@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">ResPro</string>
+    <string name="app_name">缔森积分录入</string>
+    <string name="auto_input">自动录入积分</string>
+    <string name="hand_input">手动录入积分</string>
+    <string name="protect_bag">环保袋录积分</string>
+    <string name="add_record">新增投递记录</string>
+
+    <string name="scan">扫一扫</string>
+
+    <string name="scan_code">扫描二维码</string>
+    <string name="rescan_code">重试</string>
+    <string name="scan_hint">对准回收箱上的二维码</string>
+    <string name="cancel">取消</string>
+
+    <string name="submit">提交</string>
+    <string name="weight_string">%1$s</string>
+
+    <string name="uploading">积分录入中，请稍后···</string>
+    <string name="succeed">录入成功</string>
+    <string name="getting_info">获取数据中，请稍后···</string>
+    <string name="fail_info">录入失败:&#160;%1$s</string>
+
 </resources>

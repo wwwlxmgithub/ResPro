@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:padding="@dimen/activity_padding"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.edu.xjtu.respro.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</android.support.constraint.ConstraintLayout>
+    android:layout_marginTop="@dimen/content_top_margin"
+    android:background="@color/white"
+    tools:context="cn.edu.xjtu.respro.activity.MainActivity">
+    <Button
+        android:id="@+id/autoInputBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_button_height"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_button_text"
+        android:padding="@dimen/activity_padding"
+        android:background="@drawable/auto_input_btn"
+        android:text="@string/auto_input"
+        />
+    <Button
+        android:id="@+id/handInputBtn"
+        android:layout_below="@id/autoInputBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_button_height"
+        android:layout_marginTop="@dimen/input_button_margin"
+        android:padding="@dimen/activity_padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_button_text"
+        android:background="@drawable/hand_input_btn"
+        android:text="@string/hand_input"
+        />
+    <Button
+        android:id="@+id/bagBtn"
+        android:layout_below="@id/handInputBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_button_height"
+        android:layout_marginTop="@dimen/input_button_margin"
+        android:padding="@dimen/activity_padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_button_text"
+        android:background="@drawable/bag_input_btn"
+        android:text="@string/protect_bag"
+        />
+    <Button
+        android:id="@+id/addRecordBtn"
+        android:layout_below="@id/bagBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_button_height"
+        android:layout_marginTop="@dimen/input_button_margin"
+        android:padding="@dimen/activity_padding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_button_text"
+        android:background="@drawable/add_record_btn"
+        android:text="@string/add_record"
+        />
+</RelativeLayout>

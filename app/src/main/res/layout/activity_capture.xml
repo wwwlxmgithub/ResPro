@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CaptureActivity">
+    <!-- 整体透明画布-->
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <!-- 扫描取景框-->
+    <cn.edu.xjtu.respro.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/capture_title_margin"
+            android:text="@string/scan_code"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/title_text"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/cancel_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/body_text"
+            android:src="@drawable/ic_arrow_back"/>
+        <TextView
+            android:id="@+id/scanHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scan_hint"
+            android:background="@drawable/selector_code_hint_bg"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/flashlightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开手电筒"
+            android:layout_above="@id/scanHint"
+            android:layout_marginBottom="70dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/flashlight"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/flashlightText"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</FrameLayout>

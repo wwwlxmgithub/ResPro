@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/content_top_margin"
+    tools:context="cn.edu.xjtu.respro.activity.HandInputActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/margin_big"
+                android:text="投递信息"
+                android:textSize="@dimen/input_button_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="投递时间"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="投递时间"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+
+            <cn.edu.xjtu.respro.view.GridViewForScrollView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:gravity="left"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:paddingStart="10dp"
+                android:background="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="积分"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <TextView
+                    android:id="@+id/subPointsEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="电子电器"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <EditText
+                    android:id="@+id/electronicsEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请填写电子电器备注（不超过300字）"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="不当投递"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <EditText
+                    android:id="@+id/improperEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请填写不当投递备注（不超过300字）"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="扣除积分"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <EditText
+                    android:id="@+id/deductPointsEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="请输入积分"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="总计积分"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <EditText
+                    android:id="@+id/totalPointsEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:hint="请输入积分"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_padding"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="备注"
+                    android:textColor="@color/colorTextSecond"
+                    android:textSize="@dimen/title_text" />
+
+                <EditText
+                    android:id="@+id/noteEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请填写备注（不超过300字）"
+                    android:inputType="textMultiLine"
+                    android:maxLines="10"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/title_text" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_50"
+                android:layout_margin="@dimen/activity_padding"
+                android:background="@drawable/submit_btn"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/input_button_text" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/infoLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/infoImageView"
+            android:layout_width="@dimen/info_image_size"
+            android:layout_height="@dimen/info_image_size"
+            android:src="@drawable/ic_error_circle" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_padding"
+            android:text="积分计算中，请稍后..."
+            android:textColor="@color/colorTextSecond"
+            android:textSize="@dimen/input_button_text" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scanCodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_button_height"
+        android:layout_below="@id/infoLL"
+        android:layout_marginTop="@dimen/margin_50"
+        android:background="@drawable/hand_input_btn"
+        android:layout_margin="@dimen/activity_padding"
+        android:padding="@dimen/activity_padding"
+        android:text="@string/scan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/input_button_text"
+        />
+
+</RelativeLayout>

@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cfcece</color>
+    <color name="white">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTextSecond">#757575</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="error">#d95c5f</color>
+    <color name="upload_success">#10a979</color>
+    <color name="uploading">#1FABFA</color>
+
+    <color name="bag_btn_normal_bg_start">#de7174</color>
+    <color name="bag_btn_normal_bg_end">#de7174</color>
+
+    <color name="bag_btn_pressed_bg_start">#d95c5f</color>
+    <color name="bag_btn_pressed_bg_end">#d95c5f</color>
+
+    <color name="auto_input_btn_normal_bg_start">#00B38A</color>
+    <color name="auto_input_btn_normal_bg_end">#00B38A</color>
+
+    <color name="auto_input_btn_pressed_bg_start">#019472</color>
+    <color name="auto_input_btn_pressed_bg_end">#019472</color>
+
+    <color name="hand_input_btn_normal_bg_start">#63abcc</color>
+    <color name="hand_input_btn_normal_bg_end">#63abcc</color>
+
+    <color name="hand_input_btn_pressed_bg_start">#519ec1</color>
+    <color name="hand_input_btn_pressed_bg_end">#519ec1</color>
+
+    <color name="submit_btn_normal_bg_start">#00B38A</color>
+    <color name="submit_btn_normal_bg_end">#00B38A</color>
+
+    <color name="submit_btn_pressed_bg_start">#019472</color>
+    <color name="submit_btn_pressed_bg_end">#019472</color>
+
+    <color name="add_record_btn_normal_bg_start">#deb262</color>
+    <color name="add_record_btn_normal_bg_end">#deb262</color>
+
+    <color name="add_record_btn_pressed_bg_start">#b4893b</color>
+    <color name="add_record_btn_pressed_bg_end">#b4893b</color>
+
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#4bb56d</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
 </resources>
